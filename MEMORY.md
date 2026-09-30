@@ -3,9 +3,10 @@
 ## Sesión 2026-09-29
 - Repositorio renombrado de perosnal-app a finApp-back en GitHub
 - Remote actualizado a https://github.com/luisda-291105/finApp-back.git
-- Rama actual: develop (último commit: 42ecc8a)
+- Rama actual: develop (último commit: f640dbb)
 - Creados AGENTS.md y MEMORY.md
 - README.MD actualizado con stack, IAs utilizadas, comandos y estructura
+- Push exitoso a origin/develop
 
 ## Estado del proyecto
 - Capas implementadas: Modelo, Repositorio, Servicio, DTO
@@ -21,3 +22,4 @@
 - Proyecto académico/personal de finanzas personales
 - App frontend relacionada: finApp (React + Vite)
 - IAs: ChatGPT, Claude, DeepSeek, Gemini, Groq (planificación); Codex, OpenCode, Copilot (codificación)
+- Java no instalado en entorno actual — no se pudieron ejecutar tests
