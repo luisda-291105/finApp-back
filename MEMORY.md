@@ -2,7 +2,6 @@
 
 ## Sesión 2026-09-29
 - Repositorio renombrado de perosnal-app a finApp-back en GitHub
-- Remote actualizado a https://github.com/luisda-291105/finApp-back.git
 - Creados AGENTS.md y MEMORY.md
 - README.MD actualizado con stack, IAs utilizadas, comandos y estructura
 - Reestructuración de directorios completada
