@@ -1,5 +1,13 @@
 # MEMORY.md — finApp-back
 
+## Sesión 2026-10-03
+- Añadida configuración de agentes replicando finApp-web: `.opencode/agents/`
+  (coordinator, planner, implementer, reviewer), `.agents/` (response-rules, rules,
+  skills capas/spring-rest/jpa-persistence, file-header-template) y
+  `doc/constitution.md`
+- AGENTS.md reorganizado con referencias a constitution, rules y response-rules
+- Java sigue sin estar instalado en el entorno: validaciones con `./mvnw` pendientes
+
 ## Sesión 2026-09-29
 - Repositorio renombrado de perosnal-app a finApp-back en GitHub
 - Remote actualizado a https://github.com/luisda-291105/finApp-back.git
