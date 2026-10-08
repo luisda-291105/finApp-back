@@ -28,6 +28,5 @@
 
 ## Notas
 - Proyecto académico/personal de finanzas personales
-- App frontend relacionada: finApp (React + Vite)
-- IAs: ChatGPT, Claude, DeepSeek, Gemini, Groq (planificación); Codex, OpenCode, Copilot (codificación)
-- Java no instalado en entorno actual — no se pudieron ejecutar tests
+- IAs: Codex, OpenCode 
+
