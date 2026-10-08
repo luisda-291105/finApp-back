@@ -6,6 +6,14 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
+/**
+ * @uso               Representa un gasto de una contabilidad
+ * @capa              Modelo
+ * @responsabilidades Mantener categoría, descripción, valor y fecha del gasto
+ * @datos             Identificador, contabilidad, categoría, descripción, valor y fecha
+ * @dependencias      JPA
+ * @usadoPor          GastoRepository
+ */
 @Entity
 @Table(name = "MGasto")
 public class MGasto {

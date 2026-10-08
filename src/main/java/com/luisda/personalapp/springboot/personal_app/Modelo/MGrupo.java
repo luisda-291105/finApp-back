@@ -7,6 +7,14 @@ import jakarta.persistence.Table;
 
 import java.time.LocalDate;
 
+/**
+ * @uso               Representa un grupo creado por un usuario
+ * @capa              Modelo
+ * @responsabilidades Mantener los datos, propietario y estado del grupo
+ * @datos             Identificador, usuario creador, nombre, descripción, estado y fecha
+ * @dependencias      JPA
+ * @usadoPor          GrupoRepository
+ */
 @Entity
 @Table(name = "MGrupo")
 public class MGrupo {

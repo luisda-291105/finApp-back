@@ -6,6 +6,14 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
+/**
+ * @uso               Representa un ingreso de una contabilidad
+ * @capa              Modelo
+ * @responsabilidades Mantener categoría, descripción, valor y fecha del ingreso
+ * @datos             Identificador, contabilidad, categoría, descripción, valor y fecha
+ * @dependencias      JPA
+ * @usadoPor          IngresoRepository
+ */
 @Entity
 @Table(name = "MIngreso")
 public class MIngreso {

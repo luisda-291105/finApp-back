@@ -7,6 +7,14 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * @uso               Representa un usuario de la aplicación
+ * @capa              Modelo
+ * @responsabilidades Mantener los datos y la fecha de creación del usuario
+ * @datos             Identificador, nombre, contacto, contraseña, propiedad y fecha
+ * @dependencias      JPA
+ * @usadoPor          UsuarioRepository
+ */
 @Entity
 @Table(name = "MUsuario")
 public class MUsuario {

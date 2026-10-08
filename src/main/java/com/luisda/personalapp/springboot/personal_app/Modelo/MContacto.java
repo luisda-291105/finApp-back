@@ -4,6 +4,14 @@ package com.luisda.personalapp.springboot.personal_app.Modelo;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
+/**
+ * @uso               Representa un contacto asociado a un usuario
+ * @capa              Modelo
+ * @responsabilidades Mantener los datos y el tipo del contacto
+ * @datos             Identificador, usuario, nombre, teléfono, correo, tipo y notas
+ * @dependencias      JPA
+ * @usadoPor          ContactoRepository
+ */
 @Entity
 @Table(name = "MContacto")
 public class MContacto {

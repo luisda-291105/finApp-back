@@ -9,6 +9,14 @@ import jakarta.persistence.Table;
 
 import java.time.LocalDate;
 
+/**
+ * @uso               Representa un espacio de información dentro de una contabilidad
+ * @capa              Modelo
+ * @responsabilidades Mantener los datos y el tipo del bolsillo
+ * @datos             Identificador, contabilidad, nombre, tipo, estado y fecha
+ * @dependencias      JPA
+ * @usadoPor          BolsilloRepository
+ */
 @Entity
 @Table(name = "MBolsillo")
 public class MBolsillo {
