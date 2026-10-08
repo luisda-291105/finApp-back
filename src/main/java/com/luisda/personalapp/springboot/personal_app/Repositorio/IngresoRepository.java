@@ -1,6 +1,6 @@
 package com.luisda.personalapp.springboot.personal_app.Repositorio;
 
-import com.Cesde.concesionario.Modelo.MIngreso;
+import com.luisda.personalapp.springboot.personal_app.Modelo.MIngreso;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -8,7 +8,7 @@ import com.Cesde.concesionario.Dto.UsuarioGastoDTO;
 import com.Cesde.concesionario.Dto.UsuarioIngresoDTO;
 import com.Cesde.concesionario.Dto.UsuarioAhorroDTO;
 import com.Cesde.concesionario.Dto.UsuarioOtroDTO;
-import com.Cesde.concesionario.Modelo.MUsuario;
+import com.luisda.personalapp.springboot.personal_app.Modelo.MUsuario;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.jpa.repository.JpaRepository;
