@@ -1,11 +1,11 @@
 
-package com.Cesde.concesionario.Modelo;
+package com.luisda.personalapp.springboot.personal_app.Modelo;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "mContacto")
+@Table(name = "MContacto")
 public class MContacto {
 
     // Atributos
@@ -33,21 +33,21 @@ public class MContacto {
     private String notas;
 
 
-    // Relación entre clase contacto y usuario
+    // Relación entre clase contacto y grupo
     /*
     @ManyToOne
-    @JoinColumn(name = "idUsuario")
+    @JoinColumn(name = "idGrupo")
     @JsonManagedReference
-    private MUsuario usuario;
+    private MGrupo grupo;
     */
 
 
     // Enum
     public enum Tipo {
+        PERSONAL,
         FAMILIAR,
         AMIGO,
-        TRABAJO,
-        OTRO
+        TRABAJO
     }
 
 

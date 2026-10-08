@@ -1,5 +1,5 @@
 
-package com.Cesde.concesionario.Modelo;
+package com.luisda.personalapp.springboot.personal_app.Modelo;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Entity
-@Table(name = "mUsuario")
+@Table(name = "MUsuario")
 public class MUsuario {
 
     // Atributos
@@ -31,21 +31,12 @@ public class MUsuario {
     @Column(nullable = false)
     private LocalDate fechaCreacion;
 
-
-    // Relaciones entre clase usuario y contacto
+    // Relaciones entre clase usuario y grupo
     /*
     @OneToMany(mappedBy = "usuario")
     @JsonManagedReference
-    private List<MContacto> contactos;
+    private List<MGrupo> grupo;
     */
-
-    // Relaciones entre clase usuario y contabilidad
-    /*
-    @OneToMany(mappedBy = "usuario")
-    @JsonManagedReference
-    private List<MContabilidad> contabilidades;
-    */
-
 
     // Constructores
     public MUsuario(
