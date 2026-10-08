@@ -7,6 +7,15 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @uso               Persiste y consulta ingresos
+ * @capa              Repositorio
+ * @responsabilidades CRUD y búsqueda por contabilidad
+ * @datos             Recibe y devuelve entidades MIngreso
+ * @dependencias      MIngreso, Spring Data JPA
+ * @usadoPor          SIngreso
+ */
+
 @Repository
 public interface IngresoRepository extends JpaRepository<MIngreso, String> {
 

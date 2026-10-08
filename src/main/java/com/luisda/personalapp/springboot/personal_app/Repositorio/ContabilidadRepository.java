@@ -8,6 +8,15 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @uso               Persiste y consulta contabilidades
+ * @capa              Repositorio
+ * @responsabilidades CRUD y búsquedas por grupo y estado
+ * @datos             Recibe y devuelve entidades MContabilidad
+ * @dependencias      MContabilidad, Spring Data JPA
+ * @usadoPor          SContabilidad
+ */
+
 @Repository
 public interface ContabilidadRepository extends JpaRepository<MContabilidad, String> {
 

@@ -8,6 +8,15 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @uso               Persiste y consulta gastos
+ * @capa              Repositorio
+ * @responsabilidades CRUD y búsqueda por contabilidad
+ * @datos             Recibe y devuelve entidades MGasto
+ * @dependencias      MGasto, Spring Data JPA
+ * @usadoPor          SGasto
+ */
+
 @Repository
 public interface GastoRepository extends JpaRepository<MGasto, String> {
 

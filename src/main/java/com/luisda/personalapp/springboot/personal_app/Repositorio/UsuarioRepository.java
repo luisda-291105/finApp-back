@@ -17,6 +17,15 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @uso               Persiste y consulta usuarios
+ * @capa              Repositorio
+ * @responsabilidades CRUD y búsquedas por contacto y nombre
+ * @datos             Recibe y devuelve entidades MUsuario
+ * @dependencias      MUsuario, Spring Data JPA
+ * @usadoPor          SUsuario
+ */
+
 @Repository
 public interface UsuarioRepository extends JpaRepository<MUsuario, String> {
 
