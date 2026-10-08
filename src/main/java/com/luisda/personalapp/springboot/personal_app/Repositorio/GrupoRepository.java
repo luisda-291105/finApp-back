@@ -14,6 +14,7 @@ import java.util.List;
  * @dependencias      MGrupo, Spring Data JPA
  * @usadoPor          Capas consumidoras de repositorios
  */
+
 @Repository
 public interface GrupoRepository extends JpaRepository<MGrupo, String> {
 

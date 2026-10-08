@@ -1,4 +1,3 @@
-
 package com.luisda.personalapp.springboot.personal_app.Repositorio;
 
 import com.luisda.personalapp.springboot.personal_app.Modelo.MContabilidad;
@@ -16,7 +15,6 @@ import java.util.Optional;
  * @dependencias      MContabilidad, Spring Data JPA
  * @usadoPor          SContabilidad
  */
-
 @Repository
 public interface ContabilidadRepository extends JpaRepository<MContabilidad, String> {
 
@@ -45,8 +43,8 @@ public interface ContabilidadRepository extends JpaRepository<MContabilidad, Str
         return findById(idContabilidad);
     }
 
-    // Consulta las contabilidades de un usuario.
-    List<MContabilidad> findByIdUsuario(String idUsuario);
+    // Consulta las contabilidades de un grupo.
+    List<MContabilidad> findByIdGrupo(String idGrupo);
 
     // Consulta contabilidades por estado.
     List<MContabilidad> findByEstado(boolean estado);

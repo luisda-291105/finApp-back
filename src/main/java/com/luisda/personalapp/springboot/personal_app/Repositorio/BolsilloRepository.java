@@ -14,6 +14,7 @@ import java.util.List;
  * @dependencias      MBolsillo, Spring Data JPA
  * @usadoPor          Capas consumidoras de repositorios
  */
+
 @Repository
 public interface BolsilloRepository extends JpaRepository<MBolsillo, String> {
 
