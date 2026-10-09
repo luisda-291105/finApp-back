@@ -28,11 +28,11 @@ public class MGrupo {
     @Column(length = 255 , nullable = false)
     private String descripcion;
     @Column(nullable = false)
-    private Boolean estado;
+    private boolean estado;
     @Column(nullable = false)
     private LocalDate fechaCreacion;
 
-    public MGrupo(String idGrupo, String nombre, String descripcion, Boolean estado) {
+    public MGrupo(String idGrupo, String nombre, String descripcion, boolean estado) {
         this.idGrupo = idGrupo;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -40,7 +40,7 @@ public class MGrupo {
     }
 
     public MGrupo(String idGrupo, String idUsuario, String nombre, String descripcion,
-                  Boolean estado, LocalDate fechaCreacion) {
+                  boolean estado, LocalDate fechaCreacion) {
         this.idGrupo = idGrupo;
         this.idUsuario = idUsuario;
         this.nombre = nombre;
@@ -84,11 +84,11 @@ public class MGrupo {
         this.descripcion = descripcion;
     }
 
-    public Boolean getEstado() {
+    public boolean isEstado() {
         return estado;
     }
 
-    public void setEstado(Boolean estado) {
+    public void setEstado(boolean estado) {
         this.estado = estado;
     }
 
