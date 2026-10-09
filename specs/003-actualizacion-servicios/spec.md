@@ -31,6 +31,10 @@ que sus operaciones correspondan a los modelos y repositorios que existen hoy.
 - Añadir reglas de negocio, validaciones, filtros, consultas u operaciones que no estén
   definidas por los repositorios vigentes.
 - Cambiar modelos, repositorios, DTO, controladores, esquema o formato de datos.
+- Definir contratos de DTO, traducción de excepciones a HTTP o un manejador de errores,
+  rutas, seguridad y autenticación de endpoints, paginación de respuestas o documentación
+  de la API. Estos asuntos se concretarán en futuras specs de Controlador; no forman parte
+  del contrato de Servicio.
 - Rehacer ni incorporar otros cambios previos del árbol de trabajo que no estén
   especificados aquí.
 
