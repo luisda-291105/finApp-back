@@ -37,7 +37,7 @@ revisiones del proyecto. Para herramientas y procedimientos concretos, consulta
 - Mantén los nombres en español y los prefijos de capa (M, S, C, sufijo DTO), de forma
   consistente con el código existente. La documentación del proyecto también va en
   español.
-- Las clases nuevas deben seguir la plantilla de `.agents/file-header-template.md`.
+- Las clases nuevas deben seguir la plantilla de `.agents/skills/file-header-template/SKILL.md`.
   Documenta los métodos públicos con Javadoc breve cuando su contrato no sea evidente.
 
 ## 4. Datos y servicios

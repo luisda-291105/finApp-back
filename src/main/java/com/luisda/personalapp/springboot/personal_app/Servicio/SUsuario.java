@@ -1,12 +1,6 @@
 package com.luisda.personalapp.springboot.personal_app.Servicio;
 
-import com.Cesde.concesionario.Dto.UsuarioContactoDTO;
-import com.Cesde.concesionario.Dto.UsuarioContabilidadDTO;
-import com.Cesde.concesionario.Dto.UsuarioGastoDTO;
-import com.Cesde.concesionario.Dto.UsuarioIngresoDTO;
-import com.Cesde.concesionario.Dto.UsuarioAhorroDTO;
-import com.Cesde.concesionario.Dto.UsuarioOtroDTO;
-import com.Cesde.concesionario.Modelo.MUsuario;
+import com.luisda.personalapp.springboot.personal_app.Modelo.MUsuario;
 import com.luisda.personalapp.springboot.personal_app.Repositorio.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -86,57 +80,4 @@ public class SUsuario {
         }
     }
 
-    // Consulta los contactos relacionados con un usuario.
-    public List<UsuarioContactoDTO> consultarContactosDeUsuario(String idUsuario) {
-        try {
-            return usuarioRepository.consultarContactosDeUsuario(idUsuario);
-        } catch (RuntimeException exception) {
-            throw new IllegalStateException("No se pudieron consultar los contactos del usuario", exception);
-        }
-    }
-
-    // Consulta las contabilidades relacionadas con un usuario.
-    public List<UsuarioContabilidadDTO> consultarContabilidadesDeUsuario(String idUsuario) {
-        try {
-            return usuarioRepository.consultarContabilidadesDeUsuario(idUsuario);
-        } catch (RuntimeException exception) {
-            throw new IllegalStateException("No se pudieron consultar las contabilidades del usuario", exception);
-        }
-    }
-
-    // Consulta los gastos relacionados con un usuario.
-    public List<UsuarioGastoDTO> consultarGastosDeUsuario(String idUsuario) {
-        try {
-            return usuarioRepository.consultarGastosDeUsuario(idUsuario);
-        } catch (RuntimeException exception) {
-            throw new IllegalStateException("No se pudieron consultar los gastos del usuario", exception);
-        }
-    }
-
-    // Consulta los ingresos relacionados con un usuario.
-    public List<UsuarioIngresoDTO> consultarIngresosDeUsuario(String idUsuario) {
-        try {
-            return usuarioRepository.consultarIngresosDeUsuario(idUsuario);
-        } catch (RuntimeException exception) {
-            throw new IllegalStateException("No se pudieron consultar los ingresos del usuario", exception);
-        }
-    }
-
-    // Consulta los ahorros relacionados con un usuario.
-    public List<UsuarioAhorroDTO> consultarAhorrosDeUsuario(String idUsuario) {
-        try {
-            return usuarioRepository.consultarAhorrosDeUsuario(idUsuario);
-        } catch (RuntimeException exception) {
-            throw new IllegalStateException("No se pudieron consultar los ahorros del usuario", exception);
-        }
-    }
-
-    // Consulta otros movimientos relacionados con un usuario.
-    public List<UsuarioOtroDTO> consultarOtrosDeUsuario(String idUsuario) {
-        try {
-            return usuarioRepository.consultarOtrosDeUsuario(idUsuario);
-        } catch (RuntimeException exception) {
-            throw new IllegalStateException("No se pudieron consultar otros movimientos del usuario", exception);
-        }
-    }
 }

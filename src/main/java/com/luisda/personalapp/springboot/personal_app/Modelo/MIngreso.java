@@ -1,13 +1,21 @@
 
-package com.Cesde.concesionario.Modelo;
+package com.luisda.personalapp.springboot.personal_app.Modelo;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
+/**
+ * @uso               Representa un ingreso de una contabilidad
+ * @capa              Modelo
+ * @responsabilidades Mantener categoría, descripción, valor y fecha del ingreso
+ * @datos             Identificador, contabilidad, categoría, descripción, valor y fecha
+ * @dependencias      JPA
+ * @usadoPor          IngresoRepository
+ */
 @Entity
-@Table(name = "mIngreso")
+@Table(name = "MIngreso")
 public class MIngreso {
 
     // Atributos
@@ -46,7 +54,7 @@ public class MIngreso {
         SALARIO,
         VENTA,
         REGALO,
-        OTRO
+        OTROS
     }
 
 
