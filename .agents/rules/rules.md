@@ -21,7 +21,7 @@ ajeno.
 - Nombra clases con el prefijo de su capa: M (Modelo), S (Servicio), C (Controlador);
   objetos de transferencia con sufijo DTO. Todo en español, coherente con el código
   existente.
-- Las clases nuevas deben incluir el header de `.agents/file-header-template.md`. Los
+- Las clases nuevas deben incluir el header de `.agents/skills/file-header-template/SKILL.md`. Los
   métodos públicos con contrato no evidente llevan Javadoc breve.
 
 ## Persistencia y datos

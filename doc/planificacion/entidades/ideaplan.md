@@ -1,3 +1,5 @@
+> Documento histórico. La visión refinada vive ahora en `doc/producto/vision.md` y la documentación técnica en `doc/`.
+
 e recopilado la idea que fuimos definiendo y la separé del estado técnico actual para que pueda servir como base de documentación del proyecto.
 
 FinApp
