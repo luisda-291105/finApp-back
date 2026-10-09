@@ -1,6 +1,6 @@
 package com.luisda.personalapp.springboot.personal_app.Servicio;
 
-import com.Cesde.concesionario.Modelo.MContacto;
+import com.luisda.personalapp.springboot.personal_app.Modelo.MContacto;
 import com.luisda.personalapp.springboot.personal_app.Repositorio.ContactoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
