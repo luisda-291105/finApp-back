@@ -1,20 +1,24 @@
 # MEMORY.md — finApp-back
 
 ## Estado al 2026-10-09
-- Rama local `develop`: 6 commits adelante y 4 atrás de `origin/develop` (último estado
+- Rama local `develop`: 8 commits adelante y 4 atrás de `origin/develop` (último estado
   conocido; no se hizo fetch en esta sesión). No integrar ni publicar sin revisar el árbol.
+- Commits recientes: `97db95a` reorganiza documentación y registra la spec 003;
+  `60a91bd` cambia `MGrupo.estado` a `boolean` y adapta el acceso a `isEstado()`.
 - Hay cambios locales anteriores sin commit en DTO, servicios, MGrupo, pruebas, agentes y
   documentación. No atribuirlos todos a una sola spec ni descartarlos.
 - Documentación reorganizada en subcarpetas dentro de `doc/`; planificación de entidades
   en `doc/planificacion/entidades/`; specs SDD permanecen en `specs/`.
-- Spec 003: usuario confirmó siete servicios (5 actuales + SGrupo/SBolsillo), CRUD y todas
-  las consultas actuales, y `IllegalStateException` con mensaje y causa dentro de
-  try-catch/throw. Añadir headers solo donde falten. Spec revisada y aprobada por reviewer;
-  aprobada por el usuario. `plan.md` y `tasks.md` ya están redactados y revisados; esperan
-  aprobación formal del usuario. No implementar aún.
+- Spec 003: alcance confirmado de siete servicios, CRUD/consultas, try-catch/throw con
+  `IllegalStateException` y causa, headers solo donde falten. Tras aplicar `spring-rest`,
+  la spec delimita DTO/API HTTP, rutas, seguridad de endpoints, paginación y docs API como
+  futuras specs de Controlador. Usuario aprobó la spec; planner confirmó y reviewer aprobó
+  el plan/tasks bajo la versión actual. Implementación espera aprobación explícita del plan.
 - JDK disponible en `/home/daniel/.jdks/openjdk-27`; establecer `JAVA_HOME` para Maven.
 - Última validación registrada (2026-10-08): test focalizado, `./mvnw test` (5 pruebas) y
   `./mvnw package` pasaron con ese JDK.
+- Para `MGrupo`: `JAVA_HOME=/home/daniel/.jdks/openjdk-27 ./mvnw clean test` (5 pruebas)
+  y `./mvnw package` pasaron el 2026-10-09 antes del commit `60a91bd`.
 
 ## Decisiones de dominio registradas
 - MGrupo.idUsuario identifica propietario; MGrupoUsuario representa miembros con rol
@@ -30,6 +34,9 @@
 - Spec 001 (paquetes/modelos) aprobada y completada en 2026-10-07; pruebas y package
   pasaron. Spec 002 (consultas de grupo/bolsillo) completada en 2026-10-08; suite de
   5 pruebas y package pasaron.
+- Spec 004: implementada únicamente `MFuente` el 2026-10-12; prueba focalizada (3) y suite
+  (23) pasaron, al igual que `package`, con `/home/daniel/.jdks/openjdk-27`. Enum `Tipo`
+  textual y `idUsuario` escalar, sin FK; `MLlamada`/`MGrupoUsuario` siguen pospuestos.
 - Las specs 001 y 002 aún dicen `Estado: borrador`; reconciliar su estado formal luego.
 - Capas: Modelo → Repositorio → Servicio → Controlador; DTOs solo en Controlador.
 - Antes de cerrar cambios de código: prueba focalizada, suite completa y package. Commit
