@@ -3,7 +3,7 @@
 Guía operativa del repositorio. Los principios del proyecto están en
 [`doc/constitution.md`](doc/constitution.md); las reglas detalladas de arquitectura están
 en [`.agents/rules/rules.md`](.agents/rules/rules.md). El formato de trabajo y respuesta
-está en [`.agents/response-rules.md`](.agents/response-rules.md).
+está en [`.agents/skills/response-rules/SKILL.md`](.agents/skills/response-rules/SKILL.md).
 
 ## Stack y comandos
 
@@ -34,7 +34,7 @@ está en [`.agents/response-rules.md`](.agents/response-rules.md).
 - Nombres de clases con prefijo: M (Modelo), S (Servicio), C (Controlador), sufijo DTO.
   Todo en español (nombres, commits).
 - Paquete base: `com.luisda.personalapp.springboot.personal_app`.
-- Las clases nuevas deben seguir `.agents/file-header-template.md`. No se requiere ese
+- Las clases nuevas deben seguir `.agents/skills/file-header-template/SKILL.md`. No se requiere ese
   header en documentos Markdown ni en archivos de pruebas.
 - Dependencias solo hacia abajo: Controlador → Servicio → Repositorio → Modelo.
 - DTOs solo en la capa de Controlador (no propagar a Servicio/Repositorio).

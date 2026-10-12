@@ -1,12 +1,20 @@
 package com.luisda.personalapp.springboot.personal_app.Repositorio;
 
-
-import com.Cesde.concesionario.Modelo.MGasto;
+import com.luisda.personalapp.springboot.personal_app.Modelo.MGasto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+
+/**
+ * @uso               Persiste y consulta gastos
+ * @capa              Repositorio
+ * @responsabilidades CRUD y búsqueda por contabilidad
+ * @datos             Recibe y devuelve entidades MGasto
+ * @dependencias      MGasto, Spring Data JPA
+ * @usadoPor          SGasto
+ */
 
 @Repository
 public interface GastoRepository extends JpaRepository<MGasto, String> {

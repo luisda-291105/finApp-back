@@ -1,11 +1,20 @@
 package com.luisda.personalapp.springboot.personal_app.Repositorio;
 
-import com.Cesde.concesionario.Modelo.MIngreso;
+import com.luisda.personalapp.springboot.personal_app.Modelo.MIngreso;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+
+/**
+ * @uso               Persiste y consulta ingresos
+ * @capa              Repositorio
+ * @responsabilidades CRUD y búsqueda por contabilidad
+ * @datos             Recibe y devuelve entidades MIngreso
+ * @dependencias      MIngreso, Spring Data JPA
+ * @usadoPor          SIngreso
+ */
 
 @Repository
 public interface IngresoRepository extends JpaRepository<MIngreso, String> {

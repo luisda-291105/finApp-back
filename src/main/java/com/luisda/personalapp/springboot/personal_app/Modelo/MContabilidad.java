@@ -1,23 +1,33 @@
+package com.luisda.personalapp.springboot.personal_app.Modelo;
 
-package com.Cesde.concesionario.Modelo;
-
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import java.time.LocalDate;
-import java.util.List;
 
+/**
+ * @uso               Representa una contabilidad perteneciente a un grupo
+ * @capa              Modelo
+ * @responsabilidades Mantener los datos y el estado de la contabilidad
+ * @datos             Identificador, grupo, contacto opcional, nombre, valor y fechas
+ * @dependencias      JPA
+ * @usadoPor          ContabilidadRepository
+ */
 @Entity
-@Table(name = "mContabilidad")
+@Table(name = "MContabilidad")
 public class MContabilidad {
 
-    // Atributos
     @Id
     @Column(length = 36, nullable = false)
     private String idContabilidad;
 
     @Column(length = 36, nullable = false)
-    private String idUsuario;
+    private String idGrupo;
+
+    @Column(length = 36)
+    private String idContacto;
 
     @Column(length = 100, nullable = false)
     private String nombre;
@@ -31,70 +41,20 @@ public class MContabilidad {
     @Column(nullable = false)
     private LocalDate fechaCreacion;
 
+    public MContabilidad() {
+    }
 
-    // Relación entre clase contabilidad y usuario
-    /*
-    @ManyToOne
-    @JoinColumn(name = "idUsuario")
-    @JsonManagedReference
-    private MUsuario usuario;
-    */
-
-
-    // Relaciones entre clase contabilidad y gasto
-    /*
-    @OneToMany(mappedBy = "contabilidad")
-    @JsonManagedReference
-    private List<MGasto> gastos;
-    */
-
-
-    // Relaciones entre clase contabilidad e ingreso
-    /*
-    @OneToMany(mappedBy = "contabilidad")
-    @JsonManagedReference
-    private List<MIngreso> ingresos;
-    */
-
-
-    // Relaciones entre clase contabilidad y ahorro
-    /*
-    @OneToMany(mappedBy = "contabilidad")
-    @JsonManagedReference
-    private List<MAhorro> ahorros;
-    */
-
-
-    // Relaciones entre clase contabilidad y otro
-    /*
-    @OneToMany(mappedBy = "contabilidad")
-    @JsonManagedReference
-    private List<MOtro> otros;
-    */
-
-
-    // Constructores
-    public MContabilidad(
-            String idContabilidad,
-            String idUsuario,
-            String nombre,
-            double valor,
-            boolean estado,
-            LocalDate fechaCreacion) {
-
+    public MContabilidad(String idContabilidad, String idGrupo, String idContacto,
+                         String nombre, double valor, boolean estado, LocalDate fechaCreacion) {
         this.idContabilidad = idContabilidad;
-        this.idUsuario = idUsuario;
+        this.idGrupo = idGrupo;
+        this.idContacto = idContacto;
         this.nombre = nombre;
         this.valor = valor;
         this.estado = estado;
         this.fechaCreacion = fechaCreacion;
     }
 
-    public MContabilidad() {
-    }
-
-
-    // Encapsulamiento
     public String getIdContabilidad() {
         return idContabilidad;
     }
@@ -103,12 +63,20 @@ public class MContabilidad {
         this.idContabilidad = idContabilidad;
     }
 
-    public String getIdUsuario() {
-        return idUsuario;
+    public String getIdGrupo() {
+        return idGrupo;
     }
 
-    public void setIdUsuario(String idUsuario) {
-        this.idUsuario = idUsuario;
+    public void setIdGrupo(String idGrupo) {
+        this.idGrupo = idGrupo;
+    }
+
+    public String getIdContacto() {
+        return idContacto;
+    }
+
+    public void setIdContacto(String idContacto) {
+        this.idContacto = idContacto;
     }
 
     public String getNombre() {

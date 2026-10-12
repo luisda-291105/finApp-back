@@ -1,6 +1,18 @@
 # finApp-back
 
-Backend de finanzas personales (proyecto académico/personal).
+Backend de FinApp, una plataforma personal para organizar finanzas, suscripciones,
+correos y compromisos desde un solo lugar (proyecto académico/personal).
+
+## Documentación
+
+- [Visión del producto](doc/producto/vision.md)
+- [Arquitectura](doc/arquitectura/arquitectura.md)
+- [Justificación de la arquitectura](doc/arquitectura/justificacion-arquitectura.md)
+- [Permisos y consentimiento](doc/seguridad/permisos.md)
+- [Modelo de datos](doc/modelo/modelo-datos.md)
+- [IA y n8n](doc/integraciones/ia-n8n.md)
+- [Roadmap](doc/producto/roadmap.md)
+- [Constitución del proyecto](doc/constitution.md)
 
 ## Stack
 - Java 25 + Spring Boot 4.1.1 + Maven

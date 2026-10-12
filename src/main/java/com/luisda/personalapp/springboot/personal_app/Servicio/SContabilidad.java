@@ -1,6 +1,6 @@
 package com.luisda.personalapp.springboot.personal_app.Servicio;
 
-import com.Cesde.concesionario.Modelo.MContabilidad;
+import com.luisda.personalapp.springboot.personal_app.Modelo.MContabilidad;
 import com.luisda.personalapp.springboot.personal_app.Repositorio.ContabilidadRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -62,12 +62,12 @@ public class SContabilidad {
         }
     }
 
-    // Consulta las contabilidades de un usuario.
-    public List<MContabilidad> consultarContabilidadesPorUsuario(String idUsuario) {
+    // Consulta las contabilidades de un grupo.
+    public List<MContabilidad> consultarContabilidadesPorGrupo(String idGrupo) {
         try {
-            return contabilidadRepository.findByIdUsuario(idUsuario);
+            return contabilidadRepository.findByIdGrupo(idGrupo);
         } catch (RuntimeException exception) {
-            throw new IllegalStateException("No se pudieron consultar las contabilidades por usuario", exception);
+            throw new IllegalStateException("No se pudieron consultar las contabilidades por grupo", exception);
         }
     }
 

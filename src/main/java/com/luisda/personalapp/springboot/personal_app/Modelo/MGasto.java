@@ -1,13 +1,21 @@
 
-package com.Cesde.concesionario.Modelo;
+package com.luisda.personalapp.springboot.personal_app.Modelo;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
+/**
+ * @uso               Representa un gasto de una contabilidad
+ * @capa              Modelo
+ * @responsabilidades Mantener categoría, descripción, valor y fecha del gasto
+ * @datos             Identificador, contabilidad, categoría, descripción, valor y fecha
+ * @dependencias      JPA
+ * @usadoPor          GastoRepository
+ */
 @Entity
-@Table(name = "mGasto")
+@Table(name = "MGasto")
 public class MGasto {
 
     // Atributos
@@ -46,8 +54,7 @@ public class MGasto {
         ALIMENTACION,
         TRANSPORTE,
         VIVIENDA,
-        SALUD,
-        OTRO
+        SALUD
     }
 
 

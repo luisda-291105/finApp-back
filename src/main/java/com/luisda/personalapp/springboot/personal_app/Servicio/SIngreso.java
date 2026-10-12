@@ -1,6 +1,6 @@
 package com.luisda.personalapp.springboot.personal_app.Servicio;
 
-import com.Cesde.concesionario.Modelo.MIngreso;
+import com.luisda.personalapp.springboot.personal_app.Modelo.MIngreso;
 import com.luisda.personalapp.springboot.personal_app.Repositorio.IngresoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
