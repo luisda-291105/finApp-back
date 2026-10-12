@@ -37,7 +37,16 @@
 - Spec 004: implementada únicamente `MFuente` el 2026-10-12; prueba focalizada (3) y suite
   (23) pasaron, al igual que `package`, con `/home/daniel/.jdks/openjdk-27`. Enum `Tipo`
   textual y `idUsuario` escalar, sin FK; `MLlamada`/`MGrupoUsuario` siguen pospuestos.
+- Spec 005: `FuenteRepository` y seis pruebas `@DataJpaTest` completadas el 2026-10-12;
+  fase roja por interfaz ausente, después pruebas focalizadas, suite (29) y `package`
+  pasaron con `/home/daniel/.jdks/openjdk-27`.
 - Las specs 001 y 002 aún dicen `Estado: borrador`; reconciliar su estado formal luego.
 - Capas: Modelo → Repositorio → Servicio → Controlador; DTOs solo en Controlador.
 - Antes de cerrar cambios de código: prueba focalizada, suite completa y package. Commit
   solo con validaciones aprobadas; push requiere package aprobado.
+
+## Spec 006
+- Completados SBolsillo, SFuente y SGrupo (RF-001 a RF-008), con pruebas Mockito; cada fase
+  roja confirmó la ausencia inicial de la clase y cada prueba focalizada pasó tras crearla.
+- Validaciones con JDK 27: conjunto focalizado (48), suite (68) y `./mvnw package`, todo
+  aprobado el 2026-10-12.
